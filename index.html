@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Radius</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="ABCheader">
+            <img src="images/abcLogo.svg" alt="Abc header" >
+        </div>
+        <div class="Logo">
+            <img src="images/logo.svg" alt="">
+        </div>
+   </div>
+   <div class="display-box"></div>
+   <div class="editBox">
+    <section id="header-edit">
+        <h3>Edit Invoice</h3>
+        <img class="cross" src="images\baseline-close-24px.svg" alt="">
+    </section>
+    <hr>
+    <section id="#middle-edit">
+        <div class="invoice-amount">
+            <label for="Invoice Amount">Invoice Amount *</label>
+            <input type="text" id="edit-amount">
+        </div>
+        <div class="notes">
+            <label for="Notes">Notes</label>
+            <textarea name="" id="ttar1" cols="30" rows="10"></textarea>
+        </div>
+        
+    </section>
+    <hr>
+    <section id="footer">
+        <a>Cancel</a>
+        <button class="btn btn-add clear" id="Reset">Reset</button>
+        <button class="btn btn-blue btn-add" onclick="dataedit()">Save</button>
+    </section>
+</div>
+   <div class="deleteBox">
+    <section id="header-del">
+        <h3>Delete Record(s)?</h3>
+        <img class="cross" src="images\baseline-close-24px.svg" alt="">
+    </section>
+    <hr>
+    <section id="middle-del">
+        <p>You'll lose your record(s) after this action. We can't recover them once you delete.</p>
+        <br>
+        <p>Are you sure you want to permanently delete them?</p> 
+    </section>
+    <hr>
+    <section id="footer">
+        <button class="btn btn-add">Clear</button>
+        <button class="btn btn-blue btn-add" onclick="deletedata()">Delete</button>
+    </section>
+</div>
+ <form action="http://localhost:8080/H2HBABBA2452/Add" method="POST">
+   <div class="InvoiceBox">
+    <section id="header">
+        <h3>Add Invoice</h3>
+        <img class="cross" src="images\baseline-close-24px.svg" alt="">
+    </section>
+    <hr>
+    <section id="middle">
+        <div class="row1">
+            <div class="label-names">
+                <label for="Customer Name">Customer Name *</label>
+                <input type="text" id="CustName" required>
+            </div>
+            <div class="label-names">
+                <label for="Customer No.">Customer No. *</label>
+                <input type="text" id="CustNo">
+            </div>
+            <div class="label-names">
+                <label for="Invoice No.">Invoice No. *</label>
+                <input type="text" id="InvoNo">
+            </div>
+            <div class="label-names">
+                <label for="Invoice Amount">Invoice Amount *</label>
+                <input type="text" id="InvoAmt">
+            </div>
+            
+        </div>
+        <div class="row2">
+            <div class="label-names">
+                <label for="Due Date">Due Date *</label>
+                <input type="date" name="" id="DueDate">
+            </div>
+            <div class="label-names">
+                <label for="Notes">Notes</label>
+                <textarea name="" id="ttar" cols="30" rows="10"></textarea>
+            </div>
+            
+            
+        </div>
+        
+        
+    </section>
+    <hr>
+    <section id="footer">
+        <a>Cancel</a>
+        <button class="btn btn-add clear" id="Clear">Clear</button>
+        <button type="submit" onclick="addfunc()" class="btn btn-blue btn-add">Add</button>
+    </section>
+</form>
+
+</div>
+        <div class="panel">
+            Invoice List
+            <div class="tablebox">
+                <a  onclick="prev()" class="previous round" id="prev"> < </a>
+                 <a  onclick="next()" class="next round" id="next"> > </a>
+                <div class="sidebar">
+                    <button class="btn" id="add">+Add</button>
+                    <button class="btn" id="edit">Edit</button>
+                    <button class="btn" id="delete">-Delete</button>
+                    <input type="text" class="btn" id="searchBar" placeholder="Search by Invoice Number"></input>
+                    <button class="btn" id="search-icon" onclick="search()"><img src="images/search.svg"></button>
+                </div>
+                <table class="table">
+        
+                    <tr>
+                        <th><input type="checkbox" id="checkAll"></input></th>
+                        <th>Customer Name</th>
+                        <th>Customer #</th>
+                        <th>Invoice #</th>
+                        <th>Invoice Amount</th>
+                        <th>Due Date</th>
+                        <th>Predicted Payment Date</th>
+                        <th>Notes</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
