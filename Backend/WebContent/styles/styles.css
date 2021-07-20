@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #58687E;
+}
+
+.navbar {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ABCheader {
+    position: absolute;
+    left: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.panel {
+    width: 80rem;
+    margin: auto;
+    font-size: 1.5rem;
+    color: white;
+    padding: 2% 0;
+    
+}
+
+.tablebox {
+    margin-top: 1rem;
+    background: #39495E 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 30rem;
+    padding: 1rem 2rem;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3rem;
+}
+
+.btn {
+    border-radius: 5px;
+    border: 1px solid #97A1A9;
+    height: 2rem;
+    padding: 0 15px;
+    color: #97A1A9;
+    background-color: #39495E;
+    margin: 0 .5rem;
+    cursor: pointer;
+    
+}
+
+
+
+.searchBar{
+    outline: 0;
+    text-align: left;
+    border-right: none;
+    border-radius: 5px 5px 5px 5px;
+    
+    
+    
+}
+#search-icon{
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #97A1A9;
+    height: 2rem;
+    margin: 0 4rem;
+    margin-left: -2px;
+   
+}
+
+
+table{
+    margin-top: 1rem;
+    width: 95%;
+    border-spacing: 0;
+}
+
+th, td{
+    font-weight: normal;
+    font-size: 12px;
+    color: #97A1A9;
+    border: 0;
+    
+}
+
+td{
+    text-align: center;
+    color: white;
+    height: 2rem;
+}
+
+input[type="checkbox"]:not(:checked){
+
+    cursor: pointer;
+    opacity: 0.2;
+    margin: 8px;
+}
+
+input[type="checkbox"]:checked{
+    
+    cursor: pointer;
+    margin: 8px;
+}
+
+.dark{
+    background-color: #283A46;
+}
+.display-box{
+    height: 70rem;
+    width: 88rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+.InvoiceBox{
+margin: 160px auto;
+width: 706px;
+height: 420px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+color: #fff;
+display: none;
+}
+#header{
+    
+height: 70px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+#middle{
+    margin: 2rem;
+   color: #97A1A9;
+   display: flex;
+justify-content: flex-end;
+align-items: center;
+
+   
+
+}
+#footer{
+    
+height: 36px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin: 0.5rem 0;
+}
+a{
+    position: absolute;
+    left: 24rem;
+    color: #14AFF1;
+}
+.editBox a{
+    left: 33rem;
+}
+a:hover{
+    cursor: pointer;
+}
+
+h3{
+    position: absolute;
+    left: 24rem;
+    height: 1.5rem;
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+#header-del h3{
+    left: 29.5rem;
+}
+#header-edit h3{
+    left: 33rem;
+}
+
+.cross{
+    margin: 0 4rem;
+    height: 1.3rem
+    
+}
+.cross:hover{
+    cursor: pointer;
+}
+hr{
+    border-color: #283A46;
+    border-width: 0.1px;
+
+}
+.btn-blue{
+    background-color: #14AFF1;
+    margin-right:50px ;
+}
+.btn-add{
+    color: white;
+    
+}
+input,textarea{
+    background-color: #283A46;
+    border:1px solid #356680;
+    border-radius: 0.3rem;
+    color: white;
+
+}
+input{
+    height: 1.5rem;
+}
+input,label{
+    display:flex;
+}
+
+.row1{
+    position: absolute;
+    left: 24rem;
+}
+.deleteBox{
+margin: 200px auto;
+width: 500px;
+height: 230px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+color: #fff;
+display: none;
+}
+#middle-del {
+    text-align: left;
+letter-spacing: 0px;
+opacity: 1;
+color: #C0C6CA;
+height: 100px ;
+padding: 10px;
+}
+#header-del{
+    
+height: 70px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.editBox{
+    margin: 160px auto;
+    width: 400px;
+height: 370px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+color: #fff;
+display: none;
+}
+#header-edit{
+    height: 70px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+#middle-edit {
+    text-align: center;
+align-items: center;
+padding: 10rem;
+
+height: 100px ;
+}
+
+.invoice-amount,.notes{
+    margin: 1vh auto;
+    padding: 10px 60px ;
+    
+}
+
+#ttar,#ttar1{
+    height: 7rem;
+}
+.label-names{
+    margin: 1vh auto;
+    padding: 5px 40px ;
+}
+.blue{
+    background-color: #2A5368;
+}
+.previous {
+    background-color: #14AFF1;
+    color: #fff;
+    left: 35px;
+}
+    
+.next {
+    background-color: #14AFF1;
+    color: #fff;
+    margin-left: 900px;
+    
+}
+.round{
+    position: fixed;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 50%;
+    bottom: 33%;
+}
